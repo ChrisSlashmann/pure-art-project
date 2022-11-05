@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import Header from './header/header.js';
+import Main from './main/main.js'
+import Counter from './counter/counter.js'
+import Mess from './mess/mess.js';
+import Order from './order/order.js';
+import Footer from './footer/footer.js';
+import {
+  Routes,
+  Route,
+} from "react-router-dom";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Routes>
+          <Route exact="true" path="/" element={<Main />} />
+          <Route path="/counter" element={<Counter />}  relative="path" />
+          <Route path="/mess" element={<Mess />} />
+          <Route path="/order" element={<Order />} />
+      </Routes>      
+      <Footer />
+    </>
   );
 }
 

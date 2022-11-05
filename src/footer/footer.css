@@ -1,0 +1,23 @@
+.footer { 
+  grid-area: 'footer';
+  width: 100%;
+  margin: 0;
+  padding: 10px 25px;
+
+  background-color: #D2D5FE;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.footer__content {
+  width: 234px;
+  height: 80px;
+  background-color: #3840A5;
+}

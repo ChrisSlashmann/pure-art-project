@@ -1,0 +1,12 @@
+.main__counter-text {
+  margin: 0;
+  padding: 0;
+  
+  color: #3840A5;
+  font-size: 48px;
+  line-height: 65px;
+}
+
+.main__counter-text_bold {
+  font-weight: 600;
+}
